@@ -1,0 +1,19 @@
+Task 1:
+
+- The algorithm iterates through the array and moves the largest number to the end.
+It then does this but with the second-largest-number and to the second-from-end position.
+It does this over and over until each next-largest-number is moved to the correct position.
+The iterations through the "j in range" portion is where it moves each number to its appropriate place.
+The iterations through the "i in range" portion is where is moves from largest to next-largest and so on.
+
+Task 2:
+
+- Because there is an inner loop and an outer loop which rely on one completion of the inner loop to move 
+onto the next iteration of the outer loop, this function has O(n^2) or quadratic time complexity.
+
+Task 3:
+
+- Because of its time complexity, this (Bubble Sort) method is not a very efficient way to sort through 
+a large list or array.  A better option would be what is referred to as the quick sort (where a pivot
+point is chosen) or the merg sort (where the array is divided in half over and over and then re-sorted
+together) methods.

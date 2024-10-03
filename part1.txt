@@ -1,0 +1,29 @@
+Text Messaging App Data Structures:
+
+
+1. For each message in a conversation, I feel that it would be beneficial to use lists
+or arrays to store the information.  This would allow easy and sequential storing and
+retrieval of data.
+
+2. For each user and their associated set of conversations, it would be best, in my opinion,
+to use a dictionary.  This will allow easy association between user id and their set of
+conversations.  It will also allow for quick pulling of message history once a user is logged in.
+
+3. If this messaging app were to implement threaded discussions, such as Reddit, then a tree
+structure would be helpful to keep track of each thread and its parent/child elements.
+
+4. It would also be useful to implement some kind of graph structure to keep track of more 
+complex messages, such as group messages.  This will keep track of all the relationships 
+within the group message.
+
+5. A hash table or dictionary would also be helpful when implementing a search function.
+This would map a key(message id) to a value(the actual message) and allow for quick search 
+functionality.
+
+6. When it comes to real-time updates and checking for new messages, polling would be the 
+lease effective option.  Regular polling requires too many http requests and does not provide
+prompt real-time updates.  Websockets seem to be the most ideal tool for messaging apps but,
+they can get complex and require additional server support.  Long-polling might be a good 
+alternative to Websockets if the Websocket option proves to not be feasible.  This is because
+it has fewer requests than regular polling but does not requre as much server support or complex 
+setup.
